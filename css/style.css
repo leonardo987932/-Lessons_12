@@ -1,0 +1,155 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+	/* color: #000; */
+	/* font-family:""; */
+	overflow-x: hidden;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	background-color: #333;
+}
+.wrapper {
+	min-height: 100%;
+	background-color: #08359e;
+}
+/* ------------------------------ */
+[class*="__container"] {
+	max-width: 1024px;
+	margin: 0px auto;
+}
+/* ------------------------------ */
+.bottom {
+	background-color: rgb(228, 15, 15);
+	text-align: center;
+}
+.bottom__start {
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.header {
+	margin: 0px 0px 100px 0px;
+}
+.body {
+	font-size: 0;
+	width: 1000px;
+	height: 800px;
+	padding: 150px 200px;
+	background: url("../img/bg.jpg") 0 0 / cover no-repeat;
+	transform: skew(0deg, -10deg);
+}
+.items__machine {
+	border: 1px solid red;
+	width: 500px;
+	height: 100px;
+	border-radius: 20px;
+	background: url("../img/bgcar.jpg") 0 0 / 100% auto no-repeat;
+}
+.wheels__left {
+	border: 1px solid red;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	margin: -30px 300px 0px 0px;
+	transform: rotate(45deg);
+	display: inline-block;
+	background: url("../img/r.svg") center / cover no-repeat;
+}
+.wheels__right {
+	display: inline-block;
+	border: 1px solid red;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	margin: -30px 0px 0px 0px;
+	transform: rotate(45deg);
+	background: url("../img/r.svg") center / cover no-repeat;
+}
+.disks {
+	border: 1px solid red;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	transform: scale(0.8, 0.8);
+	background: url("../img/r.svg") center/50px 50px no-repeat, url("../img/wel.svg") 0 0 / cover no-repeat;
+}
+.roow {
+	border: 1px solid red;
+	width: 250px;
+	height: 50px;
+	display: inline-block;
+	border-radius: 20px;
+	transform: translate(-100px, 0px);
+	margin: 0px 20px 0px 0px;
+	background: url("../img/sol.jpg") 0 0 / cover no-repeat;
+}
+.roow-rigth {
+	transform: translate(100px, 0px);
+}
+.items__door {
+	border: 1px transparent red;
+	width: 100px;
+	height: 100px;
+	margin: 0px auto;
+}
+.items__antenna {
+	font-size: 0;
+	background: url("../img/ant.jpg") top / 300px no-repeat;
+	border: 1px solid red;
+	width: 53px;
+	height: 100px;
+	margin: 0px auto;
+	transform: translate(0, -100px);
+}
+.items__sugnal {
+	background: url("../img/signal.jpg") left / cover no-repeat;
+	margin: 0px 10px 0px 0px;
+	display: inline-block;
+	border: 1px solid red;
+	width: 20px;
+	height: 100px;
+	transform: translate(0, -100px);
+}
+.items__sugnal_right {
+	margin: 0;
+}
